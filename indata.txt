@@ -1,0 +1,5 @@
+T Hopkins 20 US 79 4 7000
+F Kozak 19 UA Dynamo 7 4200
+F Novitskiy 21 UA Karpaty 5 3300
+T Feldman 24 IL 110 9 6500
+F Selvik 22 NO North 14 5500
