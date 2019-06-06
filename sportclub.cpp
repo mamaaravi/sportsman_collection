@@ -92,26 +92,23 @@ void Sportclub::Output(ofstream & out)
 	}
 }
 
-void Sportclub::DelSportsman() //doesn't work yet, plz don't touch 
+void Sportclub::DelSportsman()
 {
 	string surname;
 	cout << "Enter surname of a sportsman you want to delete: ";
 	cin >> surname;
-	for (auto it = T.begin(); it != T.end(); ++it)
+	for (int i = 0; i < T.size(); ++i)
 	{
-		Tennisist temp;
-		temp = *it;
-		if (temp.GetSur() == surname)
-			T.erase(it);
+		if (surname == T[i].GetSur())
+			T.erase(T.begin() + i);
 	}
-	for (auto it = F.begin(); it != F.end(); ++it)
+	for (int i = 0; i < F.size(); ++i)
 	{
-		Footballer temp;
-		temp = *it;
-		if (temp.GetSur() == surname)
-			F.erase(it);
+		if (surname == F[i].GetSur())
+			F.erase(F.begin() + i);
 	}
 }
+
 
 void Sportclub::AddSportsman()
 {
